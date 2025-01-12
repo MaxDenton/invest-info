@@ -19,6 +19,7 @@ export default [
       "indent": ["error", 2],
       "comma-dangle": ["error", "always-multiline"],
       "comma-spacing": ["error", { "before": false, "after": true }],
+      "semi": ["error", "always"],
       "no-trailing-spaces": "error",
       "arrow-body-style": ["error", "as-needed"],
       "no-use-before-define": "off",

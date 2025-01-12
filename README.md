@@ -47,8 +47,6 @@
 ## Usage
 
 1. **Browse Bonds**: Use the search bar to find specific bonds or browse through the list of available bonds.
-2. **View Details**: Click on a bond to view detailed information, including charts and historical data.
-3. **Analyze**: Utilize the analysis tools to gain insights into bond performance and risks.
 
 ## Contributing
 
@@ -78,7 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or support, please contact us at [support@investinfo.com](mailto:support@investinfo.com).
+For any questions or support, please contact us at [max.j.denton@gmail.com](mailto:max.j.denton@gmail.com).
 
 ---
 
