@@ -1,14 +1,18 @@
-import { defineConfig as defineViteConfig, mergeConfig } from 'vite';
-import { defineConfig as defineVitestConfig } from 'vitest/config';
-import react from '@vitejs/plugin-react-swc';
-import autoprefixer from 'autoprefixer';
+import { defineConfig as defineViteConfig, mergeConfig } from "vite";
+import { defineConfig as defineVitestConfig } from "vitest/config";
+import react from "@vitejs/plugin-react-swc";
+import autoprefixer from "autoprefixer";
+import tailwindcss from "@tailwindcss/vite";
 
 const viteConfig = defineViteConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
   css: {
     postcss: {
       plugins: [
-        autoprefixer({}) // add options if needed
+        autoprefixer({}), // add options if needed
       ],
     },
   },
@@ -17,12 +21,12 @@ const viteConfig = defineViteConfig({
 const vitestConfig = defineVitestConfig({
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: "jsdom",
     watch: false,
     coverage: {
-      provider: 'istanbul',
+      provider: "istanbul",
       include: ["**/*.ts", "**/*.tsx"],
-      reporter: ['text', 'json', 'html'],
+      reporter: ["text", "json", "html"],
       all: true,
     },
   },
